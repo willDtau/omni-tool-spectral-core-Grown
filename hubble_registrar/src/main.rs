@@ -7,8 +7,8 @@ async fn main() -> Result<(), Box<dyn Error>> {
     let client = reqwest::Client::new();
     
     // Credentials from HubbleBLELocker
-    let org_id = "7184cbac-fb3e-42fa-952b-b9f8d5a682e2";
-    let token = "7dd50692d2189388bd3698225c2ff472fcb8c51e76e5d8b39952adacc9af1add7715c1efd3fa26573512ace5461094bc";
+    let org_id = "YOUR_ORG_ID";
+    let token = "YOUR_TOKEN";
     
     let url = format!("https://api.hubble.com/api/v2/org/{}/devices", org_id);
 
