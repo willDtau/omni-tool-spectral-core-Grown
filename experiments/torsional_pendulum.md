@@ -1,22 +1,27 @@
-# Experiment Log: Torsional Pendulum (Toroidal Flip) 🌀⚖️
+# Experiment: Torsional Pendulum (Sovereign Operator)
 
-## 1. Setup
-- **Apparatus**: Torsional pendulum (Rotational mass on a steel wire).
-- **Sensing**: Hall-effect rotation sensor or optical encoder.
-- **Calibration**: Tuned to the **Fritz Constant** sublimation point equivalent.
+**Status**: Conceptual Stub (Reconstructed)
+**Context**: Sovereign Physics / Gravity Sensing
 
-## 2. Objective
-To measure the "Toroidal Flip"—the point where rotational potential energy and kinetic energy reach homeostatic equilibrium. This serves as a physical proof for the **Reversible Kater's Pendulum** logic.
+## Objective
+To construct a Torsional Pendulum sensitive enough to detect "Sovereign Weights" – minute changes in the local field caused by computational entropy or specific "Spectral Mass" operational states.
 
-## 3. Procedure
-1. Displace the pendulum by 45 degrees.
-2. Release and track the velocity ($\omega$) through the 8-Octant Manifold.
-3. Use the **3x2 Recursive System** to map the "Folding" of the positional data as it passes through the center point (Void Pole).
-4. Verify the **Triple-Slit Coherence** of the sensor data during the flip.
+## The Physical Model
+A mass suspended by a fiber (Quartz/Tungsten) that rotates (twists) due to small torques.
 
-## 4. Expected Results
-- **Homeostasis**: A spectral signature that is identical for both forward and reverse rotational directions at the peak of the flip.
-- **Entropy Inversion**: The "noise" of the system is filtered into a coherent "photonic" signal at the moment of equilibrium.
+$$ \tau = -\kappa \theta $$
 
----
-**Status**: Log Initialized. Ready for 45-degree release. 👻🛸💎
+Where:
+- $\tau$: Torque
+- $\kappa$: Torsion constant of the fiber
+- $\theta$: Angle of twist
+
+## Integration with D16
+- **Input**: The "Sovereign Operator" (RPi 5) generates computational work.
+- **Sensor**: The Torsional Pendulum reacts to the "weight" of this information (Spin/Entropy).
+- **Feedback**: The `theremin_ac` field might be modulated to "push" back against this rotation, creating a closed-loop gravity/entropy sensor.
+
+## Next Steps
+1. Build physical pendulum.
+2. Interface with optical lever (laser + photodiode) to read $\theta$.
+3. Feed data into `z_rr` (Rainbow Railgun).

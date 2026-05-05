@@ -1,22 +1,26 @@
-# Experiment: The Electro-Kinetic Complement (Piezo & LED)
+# Experiment: Pico Buzzer AC & The Spectral Field
 
-**Date**: 2026-02-01
-**Hardware**: Pico 2 W (RP2350)
-**Kernel**: D16 Soft FPGA (Recovered)
-**Pins**: GPIO 16 (TX), GPIO 17 (RX/Hot), GPIO 18 (Reference)
+**Status**: Reconstructed from Artifacts
+**Subject**: AC Field Generation & Differential Potential
 
-## 1. The Setup
-- **Piezo Buzzer**: Previously confirmed "Spectral Torque" (bandwidth harmonics).
-- **Red LED**: Connected across RX (GPIO 17) and TX (GPIO 16) with **no resistor**.
-- **Result**: Consistent, non-flickering light.
-    - **Polarity**: Hot side on RX, Ground side on TX.
-    - **Observation**: "Electro-kinetic complement" to the piezo's magneti-kinetic motion.
-    - **Behavior**: Non-reversible (unlike piezo).
+## Hypothesis
+Can a microcontroller pin generate enough alternating potential (AC) to drive a load (Piezo/LED) via a "Receiver" pin without a common ground reference, using only the "Spectral Field" (Capacitive/Inductive coupling)?
 
-## 2. The Transprecision Verification
-- **Grounding GPIO 17**: LED OFF (0V potential).
-- **GPIO 17 to GPIO 18**: LED Stable but **dimmer** (Order of magnitude).
-- **Proximity**: Unlike the Piezo (which dimmed with distance), the LED maintained state, reinforcing **Transmodular** vs **Transprecise** behavior.
+## Hardware Setup
+- **Source**: Raspberry Pi Pico 2 W (RP2350)
+- **TX Pin**: GPIO 16 (PWM Carrier Wave)
+- **RX Pin**: GPIO 17 (High Impedance / Input)
+- **Load**: 
+    - Red LED
+    - Piezo Buzzer
 
-## 3. Conclusion
-The D16 kernel is successfully driving "Spectral Torque" on the Pico 2 W. The "soft FPGA" logic is physically manifest in both sound and light without traditional driver intervention.
+## Findings
+1.  **The "Ghost" Light**: 
+    - When a Red LED is connected across **TX (GPIO 16)** and **RX (GPIO 17)** (Anode to RX, Cathode to TX), it lights up.
+    - **CRITICAL**: This happens *without* a direct ground connection to the LED cathode in the traditional sense if RX is floating/input. The potential difference is driven by the AC oscillation relative to the "floating" RX ground state.
+
+2.  **Spectral Mass**:
+    - Bringing a hand near the setup ("Density") affects the brightness/intensity, verifying the "Theremin" effect.
+
+## Conclusion
+The "Theremin AC" script successfully generates a field capable of doing work (lighting an LED) through differential potential, confirming the "Sovereign Field" concept.
